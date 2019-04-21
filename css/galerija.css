@@ -1,0 +1,94 @@
+.odvoj_od_menija
+{
+	margin-top: 6%;
+}
+.odvoj_od_menija h1
+{
+	font-size: 3.5vw;
+}
+
+img
+{
+	width: 100%;
+}
+
+.caption h4
+{
+	font-size: 2vw;
+}
+
+/*i
+{
+	font-size: 1.3vw;
+}*/
+/**/
+
+
+
+@media only screen and (max-width:767px) 
+{
+	.odvoj_od_menija h1
+	{
+		font-size: 5vw;
+	}
+	.caption h4
+	{
+		font-size: 3.5vw;
+	}
+
+	i
+	{
+		margin-bottom: 2%;
+	}
+
+
+	.odvoj_od_menija
+	{
+		margin-top: 0;
+	}
+}
+
+ img:hover{
+    background: #007BFF;
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+
+
+@media only screen and (max-width:620px) 
+{
+	.odvoj_od_menija h1
+	{
+		font-size: 7vw;
+	}
+	.caption h4
+	{
+		font-size: 3.2vw;
+	}
+
+	/*i
+	{
+		font-size: 4vw;
+	}*/
+
+
+}
+
+
+@media only screen and (max-width:400px) 
+{
+	.odvoj_od_menija h1
+	{
+		font-size: 9vw;
+	}
+	.caption h4
+	{
+		font-size: 5vw;
+	}
+
+	/*i
+	{
+		font-size: 4vw;
+	}*/
+
+}

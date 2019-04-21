@@ -1,0 +1,50 @@
+.odvoj_od_menija
+{
+	margin-top: 6%;
+}
+
+a:hover
+{
+	text-decoration: none;
+}
+
+.ponuda
+{
+	border: solid black 3px;
+}
+
+.ponuda img
+{
+	width: 60%; 
+	margin: 0 20%; 
+}
+
+.ponuda h2
+{
+	background-color: rgba(0,0,0,0.9); 
+	color: white; 
+	width: 100%;
+}
+
+.ponuda:hover
+{
+	background-color: white;
+	transition: 1s;
+}
+
+.ponuda:hover h2
+{
+	background-color: #007BFF;
+	transition: 1.2s;
+}
+
+
+
+
+@media only screen and (max-width:767px) 
+{
+	.odvoj_od_menija
+	{
+		margin-top: 0;
+	}
+}

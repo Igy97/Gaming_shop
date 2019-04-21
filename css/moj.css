@@ -1,0 +1,350 @@
+
+.carousel-indicators li 
+{
+	margin-right:10px;
+    width: 50px;
+    height: 5px;
+}
+   
+
+.carousel .carousel-control-next, .carousel .carousel-control-prev {
+    visibility: hidden;
+
+}
+
+.carousel:hover .carousel-control-next,  .carousel:hover .carousel-control-prev{
+    visibility: visible;
+}
+
+
+.carousel-control-prev-icon, .carousel-control-next-icon
+{
+	height: 35px;
+    width: 35px;
+}
+
+
+.slajd5, .slajd4 {
+      max-width: 900px;
+      width: 37%;
+      margin-bottom: 2%;
+      padding: 2% 2%;
+      margin-left: 45%;
+      margin-right: 0%;
+      margin-top: 0px;
+      text-align:justify;
+      background-color: rgba(0,0,0,0.7);
+      font-size: 1.3vw;
+
+}
+
+.slajd5 h2, .slajd4 h2
+{
+    padding: 4% 0;
+    text-align: center;
+    font-size: 2.6vw;
+}
+
+.slajd5 a, .slajd4 a
+{
+    margin-top: 2%;
+    padding: 2.5%;
+    font-size: 1.3vw;
+    margin-left: 10%;
+    width: 37%;
+    text-align: center;
+}
+
+.slajd4
+{
+    left: 0;
+    margin-left: 2%;
+      margin-bottom: 2%;
+}
+
+.slajd4 p
+{
+    text-align: justify;
+}
+
+.slajd4 h2
+{
+    text-align: center;
+}
+
+.slajd4 a
+{
+  width: 37%;
+  padding:1.5%;
+}
+
+
+.slajd2
+{
+    background-color: black;
+    opacity: 0.8;
+    padding:1%;
+    left: 0;
+    width: 100%;
+    margin-bottom: 1.2%;
+}
+
+.slajd2 p
+{
+    font-size: 1.6vw;
+    display: inline;
+    vertical-align: -8px;
+}
+
+.slajd2 a
+{
+    font-size: 1.4vw;
+    padding: 0.4% 2%;
+    margin-left: 26%;
+}
+
+.slajd1
+{
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10%;
+    background-color: transparent;
+}
+
+.slajd1 p
+{
+    
+    font-size: 1.7vw;
+    margin-top: 2%;
+    opacity: 1;
+}
+
+.slajd1 h2
+{
+    font-size: 3.9vw;
+}
+
+.slajd1 a
+{
+    display: block-inline;
+    margin-top: 3%;
+    width: 30%;
+    padding: 1.2%;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.ponuda
+{
+    margin-top: 1%;   
+}
+
+.ponuda h1
+{
+    margin-bottom: 1.5%;
+    //font-size: 3.5vw;
+}
+
+
+
+
+
+@media only screen and (max-width:1000px)
+{
+
+    .slajd5, .slajd4
+    {
+        padding-top: 1%;
+    }
+
+    .slajd5 h2, .slajd4 h2
+    {
+        padding: 2% 0;
+    }
+
+    .slajd2
+    {
+        margin-bottom: 1.4%;
+    }
+
+    .slajd1
+    {
+        margin-bottom: 9%;
+    }
+
+    
+}
+
+
+
+
+@media only screen and (max-width:767px) 
+{
+    .slajd5 , .slajd4
+    {
+      width: 74%; 
+      margin-bottom: 2.4%; 
+      padding-top: 2%;
+      margin-left: 0%; 
+      margin-right: 0%;
+      margin-top: 0px;
+      text-align:justify;
+      background-color: rgba(0,0,0,0.7);
+      font-size: 2vw;
+
+    }
+
+    .slajd4
+    {
+        margin-left: 14%;
+    }
+
+    .slajd5 h2, .slajd4 h2
+    {
+        padding-top: 1%;
+        padding: 0% 0;
+        text-align: center;
+        font-size: 3vw; 
+    }
+
+    .slajd5 a, .slajd4 a
+    {
+        margin-top: 0%;
+        padding: 2.5%;
+        font-size: 2vw; 
+        margin-left: 10%;
+        width: 37%;
+        text-align: center;
+    }
+
+
+    .slajd2
+    {
+        width: 100%;
+        margin-left: 0%;
+        margin-bottom: 16%;
+    }
+
+    .slajd2 a
+    {
+        margin-left: 0;
+        font-size: 2.6vw;
+        padding: 1% 1.5%;
+    }
+
+    .slajd2 p
+    {
+        display: block;
+
+        font-size: 2.6vw;
+    }
+
+
+    .slajd1
+    {
+        margin-bottom: 5%;
+    }
+
+    .slajd1 p
+    {
+    
+        font-size: 3vw;
+    }
+
+    .slajd1 h2
+    {
+        font-size: 5vw;
+    }
+
+    .slajd1 a
+    {
+        font-size: 3vw;
+    }
+
+    .odvoji
+    {
+        margin-top: 10px;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 600px)
+{
+      .carousel-indicators
+    {
+        display: none;
+    }
+
+    .slajd4, .slajd5
+    {
+        top: 0;
+        margin-bottom: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 0% 6%;
+        left: 0;
+        margin-left: 0;
+        opacity: 0.9;
+    }
+
+    .slajd4 p, .slajd5 p
+    {
+        font-size: 2.5vw;
+    }
+
+    .slajd4 a, .slajd5 a
+    {
+        margin-bottom: 1%;
+    }
+
+    .slajd4 h2, .slajd5 h2
+    {
+        font-size: 3.5vw;
+        padding-top: 1%;
+    }
+
+    .slajd2
+    {
+        margin-bottom: 9%;
+
+    }
+
+    .slajd2 a
+    {
+        font-size: 3.7vw;
+    }
+
+    .slajd2 p
+    {
+        font-size: 3.5vw;
+    }
+
+    .slajd1
+    {
+        margin-bottom: 0%;
+    }
+
+}
+
+
+@media only screen and (max-width:460px)
+{
+     .slajd4, .slajd5, .slajd2, .slajd1
+    {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

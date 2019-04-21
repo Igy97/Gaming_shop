@@ -1,0 +1,229 @@
+.navbar
+{
+  padding: 0.5% 0;
+  background-color: rgba(0,0,0,0.7); !important; //rgba(0,0,0,0.6)
+  color : red;
+}
+
+.navbar .nav-item .aktivna 
+{
+    color: #007BFF !important;
+}
+
+.nesto
+{
+    font-size: 35px;
+    color: white;
+    margin-right: 10px;
+}
+
+.navbar .navbar-brand{
+    color : #FFF;
+    font-weight: bolder;
+   	font-size: 3vw;
+    margin-left: 2%;
+}
+
+.navbar-nav
+{
+	margin-right: 2%;
+}
+
+.navbar .nav-item a
+{
+    color: #FFF !important;
+    font-size: 1.5vw;
+    font-weight: bolder;
+}
+
+.navbar .nav-item a:hover
+{
+    color: #007BFF !important;
+    transition-duration: 0.7s;
+}
+
+.navbar .dropdown-menu{
+    background-color: rgba(0,0,0,0.3);
+}
+.dropdown-item:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+.navbar form button
+{
+	width: 40px;
+	height: 40px;
+    //background-color: green;
+    color:#FFF;
+    border:0;
+}
+
+.navbar form a i
+{
+    color: white;
+    font-size: 1.3vw;
+}
+
+.navbar form a:hover i
+{
+    color:#007BFF;
+    transition-duration: 0.7s;
+}
+
+.navbar form button:hover{
+    background-color: #000;
+}
+
+.navbar form .form-control
+{
+    height: 35px;
+    width: 140px;
+}
+
+.linkovi 
+{
+    color: #212529;
+    transition: 0.5;
+    transition-duration: 1s;
+}
+
+.linkovi:hover
+{
+    color:white;
+}
+
+@media only screen and (max-width:1000px)
+{
+    .navbar .nav-item a
+    {
+        font-size: 2vw;
+    }
+
+    .navbar form a i
+    {
+        font-size: 1.7vw;
+    }
+
+    .navbar form .form-control
+    {
+        height: 30px;
+    }
+}
+
+@media only screen and (max-width:900px)
+{
+   
+    .navbar form .form-control
+    {
+        height: 25px;
+    }
+
+    .navbar .nav-item a
+    {
+        margin-top: 5%;
+    }
+}
+
+@media only screen and (max-width:767px) 
+{
+
+    .navbar
+    {
+        background-color: black !important; 
+    
+    }
+
+    .navbar .navbar-brand
+    {
+        font-size: 5vw;
+    }
+
+    .fixed-top
+    {
+        position: static;
+    }
+
+  
+    .navbar .nav-item a
+    {
+        font-size: 3.5vw;
+        text-align: center;
+        margin-top: 0;
+    }
+
+
+      .navbar form a i
+    {
+        margin-left: 2.5%;
+        font-size: 3.4vw;
+    }
+
+
+    .navbar .form-inline
+    {
+        display: block;
+        text-align: center;
+    }
+
+    .navbar .form-inline .collapse
+    {
+        display: inline-block;
+    }
+
+   
+    .navbar form .form-control
+    {
+        margin-left: 10%;
+        height: 40px;
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width:580px)
+{
+    .navbar form a i
+    {
+        margin-left: 5%;
+    }
+}
+
+
+@media only screen and (max-width:500px)
+{
+    .navbar .nav-item a
+    {
+
+        font-size: 6vw;
+    }
+}
+
+@media only screen and (max-width:400px)
+{
+    .navbar form a i
+    {
+        margin-left: 8%;
+    }
+    .navbar form a i
+    {
+        font-size: 6vw;
+    }
+
+    .navbar .navbar-brand
+    {
+        font-size: 7vw;
+    }
+    
+}
+
+@media only screen and (max-width:250px)
+{
+    .navbar form .form-control
+    {
+        height: 35px;
+        width: 180px;
+    }
+
+    .navbar form a i
+    {
+        font-size: 7vw;
+    }
+}

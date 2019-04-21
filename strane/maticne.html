@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="sr">
+<html>
+<head>
+<title>GamingShop</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bootstrap -->
+
+
+<link href="../css/bootstrap.min.css" rel="stylesheet">  
+<link rel="stylesheet" type="text/css" href="../css/header.css">
+<link rel="stylesheet" type="text/css" href="../css/laptopovi.css">
+<link rel="stylesheet" type="text/css" href="../css/fontawesome-all.css">
+
+
+</head>
+<body>
+	<header class="container-fluid p-0">
+		<nav class="navbar navbar-expand-md fixed-top ">
+		  <a class="navbar-brand" href="#"><span class="text-primary">Gaming</span>Shop</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <i class="fas fa-align-justify nesto"></i>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav ml-auto">
+		      <li class="nav-item">
+		        <a class="nav-link" href="../index.html">Početna</a>
+		      </li>
+		      <li class="nav-item active">
+		        <a class="nav-link aktivna" href="ponuda.html">Ponuda</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="kupovina.html">Kupovina</a>
+		      </li>
+		      <li class="nav-item ">
+		        <a class="nav-link" href="galerija.html">Galerija</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="o_nama.html">O nama</a>
+		      </li>
+		        
+		      <form class="form-inline my-2 my-lg-0">
+			      <div class="collapse" id="trazi"><input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></div>
+			      <a data-toggle="collapse" href="#trazi"><i class="fas fa-search"></i></a>  	     
+		    </form>
+		    </ul> 
+		  </div>
+		</nav>
+	</header>
+
+
+
+	<div class="odvoj_od_menija">
+
+		<div class="row m-0">
+			<div class="col-md-3 col-sm-12">
+				<a href="#" class="d-sm-block d-md-none btn btn-primary font-weight-bold" onclick="funkcija()" style="width: 100%; margin-bottom: 2%; border-radius: 0px;">Filter:</a>
+				<div id="standard">
+					<h2 class="ml-3 d-none d-md-block">Filter:</h2>
+				<div class="col-12">
+					<button class="btn btn-primary filter" data-toggle="collapse" data-target="#demo">Cena:</button>
+					<div id="demo" class="collapse" style="margin-top: 2%;">
+						 <label  for="inputEmail4" class="labela">
+						     Min cena:
+						 </label>
+  						<input type="text" class="form-control" id="inputEmail4">
+  						<label  for="inputEmail4 labela" class="labela">
+						     Max cena:
+						 </label>
+  						<input type="text" class="form-control" id="inputEmail4">
+					</div>
+				</div>
+
+				<div class="col-12">
+					<button class="btn btn-primary filter" data-toggle="collapse" data-target="#demo2">Raspoloživost:</button>
+					<div id="demo2" class="collapse">
+  						<div class="form-group">
+						    <div class="form-check">
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						       	Na stanju
+						      </label>
+						    </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12">
+					<button class="btn btn-primary filter" data-toggle="collapse" data-target="#demo3">Proizvođač:</button>
+					<div id="demo3" class="collapse">
+  						<div class="form-group">
+						    <div class="form-check">
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						       	AsRock
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						       	Asus
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	Biostar
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	Gigabyte
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	Microstar
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	MSI
+						      </label>
+						    </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12">
+					<button class="btn btn-primary filter" data-toggle="collapse" data-target="#demo4">Podnožje:</button>
+					<div id="demo4" class="collapse">
+  						<div class="form-group">
+						    <div class="form-check">
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						       	1150
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						       	1151
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	1156
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	2011
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	AM1
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	AM3+
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	AM4
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	FM1
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	FM2
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	FM2+
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	TR4
+						      </label>
+						      <br>
+						    </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12">
+					<button class="btn btn-primary filter" data-toggle="collapse" data-target="#demo5">Čipset:</button>
+					<div id="demo5" class="collapse">
+  						<div class="form-group">
+						    <div class="form-check">
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						       	AMD
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						       	AMD 990FX
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	AMD 990X
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	AMD A320
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	 ARM
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	B250
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	Intel B150
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	 Intel H270
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	 Intel QM87
+						      </label>
+						      <br>
+						    </div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-12">
+					<button class="btn btn-primary filter" data-toggle="collapse" data-target="#demo6">Režim rada memorije:</button>
+					<div id="demo6" class="collapse">
+  						<div class="form-group">
+						    <div class="form-check">
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						       	 Dual Channel
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						       	Quad Channel
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	 Single Channel
+						      </label>
+						      <br>
+						    </div>
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="col-12">
+					<button class="btn btn-primary filter" data-toggle="collapse" data-target="#demo7">Broj PCI Express x16:</button>
+					<div id="demo7" class="collapse">
+  						<div class="form-group">
+						    <div class="form-check">
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						       	1
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						       	2
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	3
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	 4
+						      </label>
+						      <br>
+						    </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12">
+					<button class="btn btn-primary filter" data-toggle="collapse" data-target="#demo8">Broj PCI Express x8:</button>
+					<div id="demo8" class="collapse">
+  						<div class="form-group">
+						    <div class="form-check">
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						       	1
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						       	2
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	6
+						      </label>
+						      <br>
+						    </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12">
+					<button class="btn btn-primary filter" data-toggle="collapse" data-target="#demo9">Broj PCI Express x4:</button>
+					<div id="demo9" class="collapse">
+  						<div class="form-group">
+						    <div class="form-check">
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						       1
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						       	2
+						      </label>  
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						       	4
+						      </label>  
+						      <br>
+						    </div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-12">
+					<button class="btn btn-primary filter" data-toggle="collapse" data-target="#demo10">Broj SATA portova:</button>
+					<div id="demo10" class="collapse">
+  						<div class="form-group">
+						    <div class="form-check">
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						       	5
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						       	10
+						      </label>
+						      <br>
+						    </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12">
+					<button class="btn btn-primary filter" data-toggle="collapse" data-target="#demo11">Firewire:</button>
+					<div id="demo11" class="collapse">
+  						<div class="form-group">
+						    <div class="form-check">
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						       	1
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						       	2
+						      </label>
+						      <br>
+						    </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12">
+					<button class="btn btn-primary filter" data-toggle="collapse" data-target="#demo12">Garantni rok:</button>
+					<div id="demo12" class="collapse">
+  						<div class="form-group">
+						    <div class="form-check">
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						        1 godina
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						       	2 godine
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	3 godine
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	4 godine
+						      </label>
+						      <br>
+						    </div>
+						</div>
+					</div>
+				</div>
+
+				</div>
+				
+
+
+			</div>
+
+			<div class="col-md-9 col-sm-12">
+				<div class="row m-0">
+
+						 <div class="col-12 mt-3">
+		    				<div class="card text-center">
+		    				<div class="card-header"><h3 class="card-title">Asus ROG STRIX X399-E GAMING</h3></div>		
+		      				<div class="card-body pt-0">
+		      					<div class="row" >
+		      						<div class="col-md-4 col-sm-12">
+		        						<img class="img-fluid" src="../slike/maticna1.jpg" alt="Card image cap" style="margin-top: 15%">
+		        					</div>
+		        					<div class="col-md-4 col-sm-12" style="margin-top: 5%;">
+		        						<p class="card-text text-justify tekst_paragraf">	PROIZVOĐAČ: ASUS
+		        							<br>Namena: Desktop
+		        							<br>Podnožje: TR4
+		        							<br>Čipset: AMD X399
+		        							<br>Broj memorijskih slotova: 8
+		        							<br>Garantni rok: 3 Godine
+		        						</p>
+		        						
+		        					</div>
+		        					<div class="col-md-4 col-sm-12 odvajanje">
+		        					<div class="row">
+			        					<div class="col-12 dugme">
+			        						<a href="#" class="btn btn-primary">Ponuda</a>
+			        					</div>
+			        	
+			        					<div class="col-12 dugme">
+			        						<a href="#" class="btn btn-primary">Kupi odmah!</a>
+			        					</div>
+		        					</div>
+		        				</div>
+		      					</div>		
+		      				</div>
+		   				 </div>
+		 			 </div>
+
+
+		 			 <div class="col-12 mt-3">
+		    				<div class="card text-center">
+		    				<div class="card-header"><h3 class="card-title">Asus RAMPAGE VI EXTREME</h3></div>		
+		      				<div class="card-body pt-0">
+		      					<div class="row" >
+		      						<div class="col-md-4 col-sm-12">
+		        						<img class="img-fluid" src="../slike/maticna2.jpg" alt="Card image cap" style="margin-top: 15%;">
+		        					</div>
+		        					<div class="col-md-4 col-sm-12" style="margin-top: 5%;">
+		        						<p class="card-text text-justify tekst_paragraf">	PROIZVOĐAČ: ASUS
+		        							<br>Namena: Desktop
+		        							<br>Podnožje: 2066
+		        							<br>Čipset: Intel X299
+		        							<br>Broj memorijskih slotova: 8
+		        							<br>Garantni rok: 3 Godine
+		        						</p>
+		        						
+		        					</div>
+		        					<div class="col-md-4 col-sm-12 odvajanje">
+		        					<div class="row">
+			        					<div class="col-12 dugme">
+			        						<a href="#" class="btn btn-primary">Ponuda</a>
+			        					</div>
+			        	
+			        					<div class="col-12 dugme">
+			        						<a href="#" class="btn btn-primary">Kupi odmah!</a>
+			        					</div>
+		        					</div>
+		        				</div>
+		      					</div>		
+		      				</div>
+		   				 </div>
+		 			 </div>
+
+
+
+		 			 <div class="col-12 mt-3">
+		    				<div class="card text-center">
+		    				<div class="card-header"><h3 class="card-title">Asus PRIME X299-A</h3></div>		
+		      				<div class="card-body pt-0">
+		      					<div class="row" >
+		      						<div class="col-md-4 col-sm-12">
+		        						<img class="img-fluid" src="../slike/maticna3.png" alt="Card image cap" style="margin-top: 6%;">
+		        					</div>
+		        					<div class="col-md-4 col-sm-12" style="margin-top: 5%;">
+		        						<p class="card-text text-justify tekst_paragraf">	PROIZVOĐAČ: ASUS
+		        							<br>Namena: Desktop
+		        							<br>Podnožje: 2066
+		        							<br>Čipset: Intel X299
+		        							<br>Broj memorijskih slotova: 8
+		        							<br>Garantni rok: 3 Godine
+		        						</p>
+		        						
+		        					</div>
+		        					<div class="col-md-4 col-sm-12 odvajanje">
+		        					<div class="row">
+			        					<div class="col-12 dugme">
+			        						<a href="#" class="btn btn-primary">Ponuda</a>
+			        					</div>
+			        	
+			        					<div class="col-12 dugme">
+			        						<a href="#" class="btn btn-primary">Kupi odmah!</a>
+			        					</div>
+		        					</div>
+		        				</div>
+		      					</div>		
+		      				</div>
+		   				 </div>
+		 			 </div>
+
+
+
+		 			 <div class="col-12 mt-3">
+		    				<div class="card text-center">
+		    				<div class="card-header"><h3 class="card-title">Asus MAXIMUS VIII EXTREME</h3></div>		
+		      				<div class="card-body pt-0">
+		      					<div class="row" >
+		      						<div class="col-md-4 col-sm-12">
+		        						<img class="img-fluid" src="../slike/maticna4.jpg" alt="Card image cap" style="margin-top: 15%;">
+		        					</div>
+		        					<div class="col-md-4 col-sm-12" style="margin-top: 5%;">
+		        						<p class="card-text text-justify tekst_paragraf">	PROIZVOĐAČ: ASUS
+		        							<br>Namena: Desktop
+		        							<br>Podnožje: 1151
+		        							<br>Čipset: Intel Z170
+		        							<br>Broj memorijskih slotova: 4
+		        							<br>Garantni rok: 3 Godine
+		        						</p>
+		        						
+		        					</div>
+		        					<div class="col-md-4 col-sm-12 odvajanje">
+		        					<div class="row">
+			        					<div class="col-12 dugme">
+			        						<a href="#" class="btn btn-primary">Ponuda</a>
+			        					</div>
+			        	
+			        					<div class="col-12 dugme">
+			        						<a href="#" class="btn btn-primary">Kupi odmah!</a>
+			        					</div>
+		        					</div>
+		        				</div>
+		      					</div>		
+		      				</div>
+		   				 </div>
+		 			 </div>
+
+
+
+		 			 <div class="col-12 mt-3">
+		    				<div class="card text-center">
+		    				<div class="card-header"><h3 class="card-title">Asus X540NA-GQ044</h3></div>		
+		      				<div class="card-body pt-0">
+		      					<div class="row" >
+		      						<div class="col-md-4 col-sm-12">
+		        						<img class="img-fluid" src="../slike/maticna5.jpg" alt="Card image cap" style="margin-top: 12%;">
+		        					</div>
+		        					<div class="col-md-4 col-sm-12" style="margin-top: 5%;">
+		        						<p class="card-text text-justify tekst_paragraf">	PROIZVOĐAČ: ASUS
+		        							<br>Namena: Desktop
+		        							<br>Podnožje: TR4
+		        							<br>Čipset: AMD X399
+		        							<br>Broj memorijskih slotova: 8
+		        							<br>Garantni rok: 3 Godine
+		        						</p>
+		        						
+		        					</div>
+		        					<div class="col-md-4 col-sm-12 odvajanje">
+		        					<div class="row">
+			        					<div class="col-12 dugme">
+			        						<a href="#" class="btn btn-primary">Ponuda</a>
+			        					</div>
+			        	
+			        					<div class="col-12 dugme">
+			        						<a href="#" class="btn btn-primary">Kupi odmah!</a>
+			        					</div>
+		        					</div>
+		        				</div>
+		      					</div>		
+		      				</div>
+		   				 </div>
+		 			 </div>
+
+
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+	<div class="row" id="pre_footera">
+		<div class="col-md-5 col-sm-12 prebacivanje">
+			<a href="ponuda.html" class="btn btn-primary">Vrati se u glavni meni</a>
+		</div>
+		<div class="col-md-2 d-none d-md-block"><p class="text-center" style="font-size: 1.7vw;">1 2 3 4 5 6 7</p></div>
+		<div class="col-md-5 col-sm-12 prebacivanje">
+			<a href="#" class="btn btn-primary">Sledeca strana</a>
+		</div>
+
+
+	</div>
+
+	
+
+
+
+
+
+
+	<footer class="container-fluid p-0">
+		<div class="bg-primary text-center py-3 ">
+			<div class="row  m-0">
+					<div class="col-2">
+						<a href="#"><i class="fab fa-facebook-f fa-2x linkovi"></i></a>
+					</div>
+
+					<div class="col-2">
+						<a href=""><i class="fab fa-instagram fa-2x linkovi"></i></a>
+					</div>
+
+					<div class="col-2">
+						<a href="#"><i class="fab fa-twitter fa-2x linkovi"></i></a>		
+					</div>
+
+					<div class="col-2">
+						<a href="#"><i class="fab fa-google-plus-g fa-2x linkovi"></i></a>			
+					</div>
+
+					<div class="col-2">
+						<a href="#"><i class="fab fa-linkedin-in fa-2x linkovi"></i></a>		
+					</div>
+
+					<div class="col-2">
+						<a href="#"><i class="fab fa-pinterest-p fa-2x linkovi"></i></a>			
+					</div>
+				</div>	
+		</div>
+			<div class="text-center text-white p-2" style="background-color: black;">
+				<h3>© 2018 Copyright:<span class="font-weight-bold text-primary">Igy97</span></h3>
+			</div>	
+	</footer>
+		
+	<!-- jQuery -->
+	
+	
+	<!-- Include all compiled plugins -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script src="../js/dodatak.js"></script>
+	
+</body>
+</html>

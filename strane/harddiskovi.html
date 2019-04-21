@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="sr">
+<html>
+<head>
+<title>GamingShop</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bootstrap -->
+
+
+<link href="../css/bootstrap.min.css" rel="stylesheet">  
+<link rel="stylesheet" type="text/css" href="../css/header.css">
+<link rel="stylesheet" type="text/css" href="../css/laptopovi.css">
+<link rel="stylesheet" type="text/css" href="../css/fontawesome-all.css">
+
+
+</head>
+<body>
+	<header class="container-fluid p-0">
+		<nav class="navbar navbar-expand-md fixed-top ">
+		  <a class="navbar-brand" href="#"><span class="text-primary">Gaming</span>Shop</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <i class="fas fa-align-justify nesto"></i>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav ml-auto">
+		      <li class="nav-item">
+		        <a class="nav-link" href="../index.html">Početna</a>
+		      </li>
+		      <li class="nav-item active">
+		        <a class="nav-link aktivna" href="ponuda.html">Ponuda</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="kupovina.html">Kupovina</a>
+		      </li>
+		      <li class="nav-item ">
+		        <a class="nav-link" href="galerija.html">Galerija</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="o_nama.html">O nama</a>
+		      </li>
+		        
+		      <form class="form-inline my-2 my-lg-0">
+			      <div class="collapse" id="trazi"><input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></div>
+			      <a data-toggle="collapse" href="#trazi"><i class="fas fa-search"></i></a>  	     
+		    </form>
+		    </ul> 
+		  </div>
+		</nav>
+	</header>
+
+
+
+	<div class="odvoj_od_menija">
+
+		<div class="row m-0">
+			<div class="col-md-3 col-sm-12">
+				<a href="#" class="d-sm-block d-md-none btn btn-primary font-weight-bold" onclick="funkcija()" style="width: 100%; margin-bottom: 2%; border-radius: 0px;">Filter:</a>
+				<div id="standard">
+					<h2 class="ml-3 d-none d-md-block">Filter:</h2>
+				<div class="col-12">
+					<button class="btn btn-primary filter" data-toggle="collapse" data-target="#demo">Cena:</button>
+					<div id="demo" class="collapse" style="margin-top: 2%;">
+						 <label  for="inputEmail4" class="labela">
+						     Min cena:
+						 </label>
+  						<input type="text" class="form-control" id="inputEmail4">
+  						<label  for="inputEmail4 labela" class="labela">
+						     Max cena:
+						 </label>
+  						<input type="text" class="form-control" id="inputEmail4">
+					</div>
+				</div>
+
+				<div class="col-12">
+					<button class="btn btn-primary filter" data-toggle="collapse" data-target="#demo2">Raspoloživost:</button>
+					<div id="demo2" class="collapse">
+  						<div class="form-group">
+						    <div class="form-check">
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						       	Na stanju
+						      </label>
+						    </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12">
+					<button class="btn btn-primary filter" data-toggle="collapse" data-target="#demo3">Proizvođač:</button>
+					<div id="demo3" class="collapse">
+  						<div class="form-group">
+						    <div class="form-check">
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						        Hitachi
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						       	HP
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	Samsung
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	Seagate
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	 Seasonic
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	Toshiba
+						      </label>
+						    </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12">
+					<button class="btn btn-primary filter" data-toggle="collapse" data-target="#demo4">Namena:</button>
+					<div id="demo4" class="collapse">
+  						<div class="form-group">
+						    <div class="form-check">
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						       	Desktop
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						       	Hibridni
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	Mehanički
+						      </label>
+						      <br>
+						    </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12">
+					<button class="btn btn-primary filter" data-toggle="collapse" data-target="#demo5">Interfejs:</button>
+					<div id="demo5" class="collapse">
+  						<div class="form-group">
+						    <div class="form-check">
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						       	ATA
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						       	SATA
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	SATA2
+						      </label>
+						      <br>
+						      <br>
+						    </div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-12">
+					<button class="btn btn-primary filter" data-toggle="collapse" data-target="#demo6">Veličina HDD-a</button>
+					<div id="demo6" class="collapse">
+  						<div class="form-group">
+						    <div class="form-check">
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						       	 1 TB
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						       	1.5 TB
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	 10 TB
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	500 GB
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	 320 GB
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	360 GB
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	480 GB
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	 518 GB
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	750 GB
+						      </label>
+						      <br>
+						    </div>
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="col-12">
+					<button class="btn btn-primary filter" data-toggle="collapse" data-target="#demo7">Broj obrtaja:</button>
+					<div id="demo7" class="collapse">
+  						<div class="form-group">
+						    <div class="form-check">
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						       	10000 rpm
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						       	5400 rpm
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	5700 rpm
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	5900 rpm
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	7200 rpm
+						      </label>
+						      <br>
+						    </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12">
+					<button class="btn btn-primary filter" data-toggle="collapse" data-target="#demo8">Format:</button>
+					<div id="demo8" class="collapse">
+  						<div class="form-group">
+						    <div class="form-check">
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						       	 2.5"
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						       	 3.5"
+						      </label>
+						      <br>
+						    </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12">
+					<button class="btn btn-primary filter" data-toggle="collapse" data-target="#demo9">Vrsta HDD-a:</button>
+					<div id="demo9" class="collapse">
+  						<div class="form-group">
+						    <div class="form-check">
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						       	SSD
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						       	HDD
+						      </label>  
+						      <br>
+						    </div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-12">
+					<button class="btn btn-primary filter" data-toggle="collapse" data-target="#demo10">Bafer:</button>
+					<div id="demo10" class="collapse">
+  						<div class="form-group">
+						    <div class="form-check">
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						       	 128 MB
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						       	16 MB
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	 2 MB
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	256 MB
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	32 MB
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	64 MB
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	8 MB
+						      </label>
+						      <br>
+						    </div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-12">
+					<button class="btn btn-primary filter" data-toggle="collapse" data-target="#demo12">Garantni rok:</button>
+					<div id="demo12" class="collapse">
+  						<div class="form-group">
+						    <div class="form-check">
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						        1 godina
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						       	2 godine
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	3 godine
+						      </label>
+						      <br>
+						      <input class="form-check-input" type="checkbox" id="gridCheck">
+						      <label class="form-check-label" for="gridCheck">
+						      	4 godine
+						      </label>
+						      <br>
+						    </div>
+						</div>
+					</div>
+				</div>
+
+				</div>
+				
+
+
+			</div>
+
+			<div class="col-md-9 col-sm-12">
+				<div class="row m-0">
+
+						 <div class="col-12 mt-3">
+		    				<div class="card text-center">
+		    				<div class="card-header"><h3 class="card-title">6 TB Western Digital 6002FRYZ 3.5"</h3></div>		
+		      				<div class="card-body pt-0">
+		      					<div class="row" >
+		      						<div class="col-md-4 col-sm-12">
+		        						<img class="img-fluid" src="../slike/disk1.jpg" alt="Card image cap" style="margin-top: 15%">
+		        					</div>
+		        					<div class="col-md-4 col-sm-12" style="margin-top: 5%;">
+		        						<p class="card-text text-justify tekst_paragraf">PROIZVOĐAČ:<br>WESTERN DIGITAL
+		        							<br>Namena: Za Desktop		        							
+		        							<br>Interfejs: SATA 3
+		        							<br>Veličina HDD-a: 6 TB
+		        							<br>Broj obrtaja: 7200 rpm
+		        							<br>Garantni rok: 5 Godina
+		        						</p>
+		        						
+		        					</div>
+		        					<div class="col-md-4 col-sm-12 odvajanje">
+		        					<div class="row">
+			        					<div class="col-12 dugme">
+			        						<a href="#" class="btn btn-primary">Ponuda</a>
+			        					</div>
+			        	
+			        					<div class="col-12 dugme">
+			        						<a href="#" class="btn btn-primary">Kupi odmah!</a>
+			        					</div>
+		        					</div>
+		        				</div>
+		      					</div>		
+		      				</div>
+		   				 </div>
+		 			 </div>
+
+
+		 			 <div class="col-12 mt-3">
+		    				<div class="card text-center">
+		    				<div class="card-header"><h3 class="card-title">10 TB Seagate ST10000VX0004 3.5"</h3></div>		
+		      				<div class="card-body pt-0">
+		      					<div class="row" >
+		      						<div class="col-md-4 col-sm-12">
+		        						<img class="img-fluid" src="../slike/disk2.jpg" alt="Card image cap" style="margin-top: 15%;">
+		        					</div>
+		        					<div class="col-md-4 col-sm-12" style="margin-top: 5%;">
+		        						<p class="card-text text-justify tekst_paragraf">	PROIZVOĐAČ:SEAGATE
+		        							<br>Namena: Desktop	        							
+		        							<br>Interfejs: SATA 3
+		        							<br>Veličina HDD-a: 10 TB
+		        							<br>Broj obrtaja: 7200 rpm
+		        							<br>Garantni rok: 5 Godina
+		        						</p>
+		        						
+		        					</div>
+		        					<div class="col-md-4 col-sm-12 odvajanje">
+		        					<div class="row">
+			        					<div class="col-12 dugme">
+			        						<a href="#" class="btn btn-primary">Ponuda</a>
+			        					</div>
+			        	
+			        					<div class="col-12 dugme">
+			        						<a href="#" class="btn btn-primary">Kupi odmah!</a>
+			        					</div>
+		        					</div>
+		        				</div>
+		      					</div>		
+		      				</div>
+		   				 </div>
+		 			 </div>
+
+
+
+		 			 <div class="col-12 mt-3">
+		    				<div class="card text-center">
+		    				<div class="card-header"><h3 class="card-title">8 TB Western Digital WD8003FRYZ 3.5"</h3></div>		
+		      				<div class="card-body pt-0">
+		      					<div class="row" >
+		      						<div class="col-md-4 col-sm-12">
+		        						<img class="img-fluid" src="../slike/disk3.jpg" alt="Card image cap" style="margin-top: 15%;">
+		        					</div>
+		        					<div class="col-md-4 col-sm-12" style="margin-top: 5%;">
+		        						<p class="card-text text-justify tekst_paragraf">	PROIZVOĐAČ:<br>WESTERN DIGITAL
+		        							<br>Namena: Za Desktop		        							
+		        							<br>Interfejs: SATA 3
+		        							<br>Veličina HDD-a: 8 TB
+		        							<br>Broj obrtaja: 7200 rpm
+		        							<br>Garantni rok: 5 Godina
+		        						</p>
+		        						
+		        					</div>
+		        					<div class="col-md-4 col-sm-12 odvajanje">
+		        					<div class="row">
+			        					<div class="col-12 dugme">
+			        						<a href="#" class="btn btn-primary">Ponuda</a>
+			        					</div>
+			        	
+			        					<div class="col-12 dugme">
+			        						<a href="#" class="btn btn-primary">Kupi odmah!</a>
+			        					</div>
+		        					</div>
+		        				</div>
+		      					</div>		
+		      				</div>
+		   				 </div>
+		 			 </div>
+
+
+
+		 			 <div class="col-12 mt-3">
+		    				<div class="card text-center">
+		    				<div class="card-header"><h3 class="card-title">Asus GL503VM-FY100</h3></div>		
+		      				<div class="card-body pt-0">
+		      					<div class="row" >
+		      						<div class="col-md-4 col-sm-12">
+		        						<img class="img-fluid" src="../slike/disk4.jpg" alt="Card image cap" style="margin-top: 15%;">
+		        					</div>
+		        					<div class="col-md-4 col-sm-12" style="margin-top: 5%;">
+		        						<p class="card-text text-justify tekst_paragraf">	PROIZVOĐAČ:<br>WESTERN DIGITAL
+		        							<br>Namena: Za Desktop		        							
+		        							<br>Interfejs: SATA 3
+		        							<br>Veličina HDD-a: 8 TB
+		        							<br>Broj obrtaja: 5400 rpm
+		        							<br>Garantni rok: 5 Godina
+		        						</p>
+		        						
+		        					</div>
+		        					<div class="col-md-4 col-sm-12 odvajanje">
+		        					<div class="row">
+			        					<div class="col-12 dugme">
+			        						<a href="#" class="btn btn-primary">Ponuda</a>
+			        					</div>
+			        	
+			        					<div class="col-12 dugme">
+			        						<a href="#" class="btn btn-primary">Kupi odmah!</a>
+			        					</div>
+		        					</div>
+		        				</div>
+		      					</div>		
+		      				</div>
+		   				 </div>
+		 			 </div>
+
+
+
+		 			 <div class="col-12 mt-3">
+		    				<div class="card text-center">
+		    				<div class="card-header"><h3 class="card-title">10 TB Western Digital WD101KFBX 3.5"</h3></div>		
+		      				<div class="card-body pt-0">
+		      					<div class="row" >
+		      						<div class="col-md-4 col-sm-12">
+		        						<img class="img-fluid" src="../slike/disk5.jpg" alt="Card image cap" style="margin-top: 12%;">
+		        					</div>
+		        					<div class="col-md-4 col-sm-12" style="margin-top: 5%;">
+		        						<p class="card-text text-justify tekst_paragraf">	PROIZVOĐAČ:<br>WESTERN DIGITAL
+		        							<br>Namena: Za Desktop		        							
+		        							<br>Interfejs: SATA 3
+		        							<br>Veličina HDD-a: 10 TB
+		        							<br>Broj obrtaja: 7200 rpm
+		        							<br>Garantni rok: 5 Godina
+		        						</p>
+		        						
+		        					</div>
+		        					<div class="col-md-4 col-sm-12 odvajanje">
+		        					<div class="row">
+			        					<div class="col-12 dugme">
+			        						<a href="#" class="btn btn-primary">Ponuda</a>
+			        					</div>
+			        	
+			        					<div class="col-12 dugme">
+			        						<a href="#" class="btn btn-primary">Kupi odmah!</a>
+			        					</div>
+		        					</div>
+		        				</div>
+		      					</div>		
+		      				</div>
+		   				 </div>
+		 			 </div>
+
+
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+	<div class="row" id="pre_footera">
+		<div class="col-md-5 col-sm-12 prebacivanje">
+			<a href="ponuda.html" class="btn btn-primary">Vrati se u glavni meni</a>
+		</div>
+		<div class="col-md-2 d-none d-md-block"><p class="text-center" style="font-size: 1.7vw;">1 2 3 4 5 6 7</p></div>
+		<div class="col-md-5 col-sm-12 prebacivanje">
+			<a href="#" class="btn btn-primary">Sledeca strana</a>
+		</div>
+
+
+	</div>
+
+	
+
+
+
+
+
+
+	<footer class="container-fluid p-0">
+		<div class="bg-primary text-center py-3 ">
+			<div class="row  m-0">
+					<div class="col-2">
+						<a href="#"><i class="fab fa-facebook-f fa-2x linkovi"></i></a>
+					</div>
+
+					<div class="col-2">
+						<a href=""><i class="fab fa-instagram fa-2x linkovi"></i></a>
+					</div>
+
+					<div class="col-2">
+						<a href="#"><i class="fab fa-twitter fa-2x linkovi"></i></a>		
+					</div>
+
+					<div class="col-2">
+						<a href="#"><i class="fab fa-google-plus-g fa-2x linkovi"></i></a>			
+					</div>
+
+					<div class="col-2">
+						<a href="#"><i class="fab fa-linkedin-in fa-2x linkovi"></i></a>		
+					</div>
+
+					<div class="col-2">
+						<a href="#"><i class="fab fa-pinterest-p fa-2x linkovi"></i></a>			
+					</div>
+				</div>	
+		</div>
+			<div class="text-center text-white p-2" style="background-color: black;">
+				<h3>© 2018 Copyright:<span class="font-weight-bold text-primary">Igy97</span></h3>
+			</div>	
+	</footer>
+		
+	<!-- jQuery -->
+	
+	
+	<!-- Include all compiled plugins -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script src="../js/dodatak.js"></script>
+	
+</body>
+</html>

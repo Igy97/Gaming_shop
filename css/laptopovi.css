@@ -1,0 +1,214 @@
+.odvoj_od_menija
+{
+	margin-top: 7%;
+}
+
+
+.filter 
+{
+	width: 100%;
+	display: block;
+	border-radius:0;
+	font-weight: bold;
+	font-size: 1.2vw;
+}
+
+
+
+
+
+
+.form-control
+{
+	width: 100%;
+	margin-bottom: 4%;
+	margin-top:0;
+}
+
+.labela
+{
+	font-size: 1.5vw;
+}
+
+input[type="checkbox"]{
+  width: 19px; /*Desired width*/
+  height: 19px; /*Desired height*/
+}
+
+.form-check-label
+{
+	font-size: 1.5vw;
+}
+
+
+.form-check-input
+{
+	font-size: 1.5vw;
+	padding: 0;
+
+}
+
+.form-group
+{
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+.odvajanje
+{
+	margin-top: 5%;
+}
+
+.tekst_paragraf
+{
+	font-size: 1.5vw;
+}
+
+.dugme a
+{
+	display: block;
+	width: 100%;
+	padding: 8% 0;
+	font-size: 1.5vw;
+
+
+}
+
+.dugme a:nth-child(1)
+{
+	margin-bottom: 6%;
+}
+
+.prebacivanje a
+{
+	width: 90%; 
+	margin:0 5%; 
+	padding: 1.2% 0;
+}
+
+#pre_footera
+{
+	margin: 0;
+	margin-top: 2%;
+	margin-bottom:  0.8%;
+}
+
+
+
+
+@media only screen and (max-width:900px) 
+{
+	.filter 
+	{
+		font-size: 1.5vw;
+	}
+}
+
+
+
+@media only screen and (max-width:767px) 
+{
+
+	#standard
+	{
+		display: none;
+		transform: 0.5s;
+	}
+
+	#standard2
+	{
+		display: block;
+		transform: 0.5s;
+	}
+
+	.form-check-label
+	{
+		font-size: 3vw;
+	}
+
+
+	.labela
+	{
+		font-size: 3vw;
+	}
+
+	.dugme a
+	{
+		padding: 3% 0;
+		font-size: 3vw;
+	}
+
+	.tekst_paragraf
+	{
+		font-size: 4.5vw;
+	}
+
+	.filter 
+	{
+		font-size: 2.5vw;
+	}
+
+	.dugme a:nth-child(1)
+	{
+		margin-bottom: 2%;
+	}
+
+	.prebacivanje a
+	{
+		width: 90%; 
+		padding: 2% 0%;
+		margin: 0 5%;
+		margin-bottom: 1.8%;
+	}
+
+	#pre_footera
+	{
+		margin-top: 4%;
+		margin-bottom:  0.8%;
+	}
+
+	
+
+	#drugo
+	{
+		margin-top: 2%;
+		margin-bottom: 4%;
+	}
+
+
+
+
+}
+
+
+@media only screen and (max-width:450px) 
+{
+	.form-check-label
+	{
+		font-size: 5vw;
+	}
+
+
+	.labela
+	{
+		font-size: 5vw;
+	}
+
+	.dugme a
+	{
+		padding: 3% 0;
+		font-size: 5vw;
+	}
+
+	.tekst_paragraf
+	{
+		font-size: 5vw;
+	}
+
+	.filter 
+	{
+		font-size: 4vw;
+	}
+
+
+}
